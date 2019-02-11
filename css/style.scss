@@ -14,7 +14,9 @@ body {
 
 h3 {
   font-size: 17px;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
+  transform: scale(1.2, 1);
+  margin-left: 10px;
 }
 
 li {
@@ -30,9 +32,10 @@ li {
   height: 20px;
   margin-left: -1px;
   margin-right: -1px;
-  margin-top: 12px;
+  margin-top: 11px;
   padding-left: 2px;
-  background: linear-gradient(#dfdfdf, #fff);
+  // background: linear-gradient(#dfdfdf, #fff);
+  background: url("../images/bg_title_profile.jpg") no-repeat;
   h3 {
     position: absolute;
     top: -27px;
@@ -41,23 +44,29 @@ li {
 
 .about_info {
   display: flex;
+  margin-top: -3px;
   &_avt {
     margin-left: 14px;
   }
   &_content {
-    width: 394px;
-    height: 108px;
+    width: 390px;
+    height: 100px;
+    margin: 0 9px 0 5px;
     overflow: scroll;
-    ul {
-      padding-left: 15px;
-    }
+    padding-left: 10px;
   }
 }
 
 .fact_content {
   li:before {
-    content: url("../images/icon.png");
+    content: url("../images/icn_star_facts.png");
     margin-right: 5px;
+  }
+  li {
+    margin-bottom: 3px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
   padding-left: 34px;
 }
@@ -66,7 +75,7 @@ li {
   margin-top: 50px;
   .post_item {
     position: relative;
-    background-image: url("../images/img-bg.png");
+    background-image: url("../images/bg_comment.png");
     background-repeat: no-repeat;
     height: 51px;
     padding-top: 8px;
@@ -96,12 +105,20 @@ li {
   }
 }
 
+.fact_title {
+  h3 {
+    margin-left: 45px;
+    margin-top: 12px;
+  }
+}
+
 .comment {
   margin-top: 30px;
   .form_title {
     text-align: center;
     h3 {
       margin-bottom: 0px;
+      // margin-left: 48px;
     }
   }
 }
