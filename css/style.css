@@ -12,7 +12,9 @@ body {
 
 h3 {
   font-size: 17px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+  transform: scale(1.2, 1);
+  margin-left: 10px;
 }
 
 li {
@@ -28,9 +30,9 @@ li {
   height: 20px;
   margin-left: -1px;
   margin-right: -1px;
-  margin-top: 12px;
+  margin-top: 11px;
   padding-left: 2px;
-  background: linear-gradient(#dfdfdf, #fff);
+  background: url("../images/bg_title_profile.jpg") no-repeat;
 }
 .about_title h3 {
   position: absolute;
@@ -39,33 +41,39 @@ li {
 
 .about_info {
   display: flex;
+  margin-top: -3px;
 }
 .about_info_avt {
   margin-left: 14px;
 }
 .about_info_content {
-  width: 394px;
-  height: 108px;
+  width: 390px;
+  height: 100px;
+  margin: 0 9px 0 5px;
   overflow: scroll;
-}
-.about_info_content ul {
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 .fact_content {
   padding-left: 34px;
 }
 .fact_content li:before {
-  content: url("../images/icon.png");
+  content: url("../images/icn_star_facts.png");
   margin-right: 5px;
+}
+.fact_content li {
+  margin-bottom: 3px;
+}
+.fact_content li:last-child {
+  margin-bottom: 0px;
 }
 
 .post {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .post .post_item {
   position: relative;
-  background-image: url("../images/img-bg.png");
+  background-image: url("../images/bg_comment.png");
   background-repeat: no-repeat;
   height: 51px;
   padding-top: 8px;
@@ -94,8 +102,13 @@ li {
   text-decoration: underline;
 }
 
+.fact_title h3 {
+  margin-left: 45px;
+  margin-top: 12px;
+}
+
 .comment {
-  margin-top: 30px;
+  margin-top: 23px;
 }
 .comment .form_title {
   text-align: center;
@@ -110,7 +123,7 @@ li {
   margin-bottom: 4px;
 }
 .input_item div {
-  width: 100px;
+  width: 103px;
   margin-left: 5px;
   margin-right: 6px;
 }
@@ -119,7 +132,7 @@ li {
 }
 
 #subject {
-  width: 373px;
+  width: 370px;
   height: 79px;
   padding-left: 4px;
   resize: none;
@@ -128,6 +141,7 @@ li {
 textarea::-webkit-input-placeholder {
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
+  font-weight: 600;
   color: #000;
 }
 
@@ -136,7 +150,10 @@ input {
 }
 
 #input_textarea {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
+.comment {
+  font-weight: 600;
+}
 /*# sourceMappingURL=style.css.map */
