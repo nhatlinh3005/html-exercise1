@@ -13,51 +13,65 @@ body {
 }
 
 h3 {
-  font-size: 17px;
-  margin-bottom: 19px;
-  transform: scale(1.2, 1);
   margin-left: 10px;
+  margin-bottom: 19px; 
+  transform: scale(1.2, 1);
+  font-size: 17px;
 }
 
 li {
   list-style: none;
 }
 
-.fact_title {
+.fact__title {
   padding-left: 2px;
+  margin-left: 45px;
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 
-.about_title {
-  position: relative;
-  height: 20px;
+// .about__title {
+//   position: relative;
+//   height: 20px;
+//   margin-left: -1px;
+//   margin-right: -1px;
+//   margin-top: 11px;
+//   padding-left: 2px;
+//   background: url("../images/bg__title__profile.jpg") no-repeat;
+//   h3 {
+//     position: absolute;
+//     top: -27px;
+//   }
+// }
+
+.about__title {
+  margin-top: -28px;
+  margin-bottom: 9px;
+  padding-left: 34px;
+}
+
+.profile__title__bg {
+  margin-top: 11px;
   margin-left: -1px;
   margin-right: -1px;
-  margin-top: 11px;
-  padding-left: 2px;
-  // background: linear-gradient(#dfdfdf, #fff);
-  background: url("../images/bg_title_profile.jpg") no-repeat;
-  h3 {
-    position: absolute;
-    top: -27px;
-  }
 }
 
-.about_info {
+.about__info {
   display: flex;
   margin-top: -3px;
-  &_avt {
+  &__avt {
     margin-left: 14px;
   }
-  &_content {
+  &__content {
     width: 390px;
     height: 100px;
     margin: 0 9px 0 5px;
-    overflow: scroll;
     padding-left: 10px;
+    overflow: scroll;
   }
 }
 
-.fact_content {
+.fact__content {
   li:before {
     content: url("../images/icn_star_facts.png");
     margin-right: 5px;
@@ -72,14 +86,14 @@ li {
 }
 
 .post {
-  margin-top: 50px;
-  .post_item {
+  margin-top: 60px;
+  .post__item {
     position: relative;
-    background-image: url("../images/bg_comment.png");
-    background-repeat: no-repeat;
     height: 51px;
     padding-top: 8px;
-    .post_item_time {
+    background-image: url("../images/bg_comment.png");
+    background-repeat: no-repeat;
+    .post__item__time {
       position: absolute;
       bottom: 0;
       margin-left: 51px;
@@ -88,7 +102,7 @@ li {
         font-size: 13px;
       }
     }
-    .post_item_content {
+    .post__item__content {
       margin-left: 18px;
       p {
         margin: 0 0;
@@ -105,60 +119,51 @@ li {
   }
 }
 
-.fact_title {
-  h3 {
-    margin-left: 45px;
-    margin-top: 12px;
-  }
-}
-
 .comment {
-  margin-top: 30px;
-  .form_title {
+  margin-top: 23px;
+  // font-weight: 600;
+  .form__title {
     text-align: center;
-    h3 {
-      margin-bottom: 0px;
-      // margin-left: 48px;
-    }
+    margin-bottom: 0px;
   }
 }
 
-.input_item {
+.input__item {
   display: flex;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   & div {
-    width: 100px;
+    width: 103px;
     margin-left: 5px;
     margin-right: 6px;
   }
   & input {
     width: 140px;
+    border: solid 1px #e0e0e0;
+    height: 19px;
+  }
+  &:last-child{
+    margin-bottom: 5px;
   }
 }
 
 #subject {
-  width: 373px;
+  width: 370px;
   height: 79px;
   padding-left: 4px;
   resize: none;
+  border: solid 1px #e0e0e0;
+
 }
 
 textarea::-webkit-input-placeholder {
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
+  // font-weight: 600;
   color: #000;
 }
 
-input {
-  height: 16px;
-}
 
-
-
-#input_textarea {
-  margin-bottom: 6px;
-}
 
 
 
